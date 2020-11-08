@@ -1,0 +1,20 @@
+body {
+  background-color: #ffcc66;
+}
+
+.logo {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #ff0000, #ff3d00, #ff5900, #ff6f00, #ff8200, #f18100, #e47f00, #d77d03, #ba6903, #9d5603, #814402, #663300);
+  /* Gradient from: https://mycolor.space/gradient3 */
+  /* Tips for styling fontawesome icons from: https://stackoverflow.com/questions/56916493/how-do-i-use-gradients-with-font-awesome-icons  */
+  /* Colour Picker: https://www.w3schools.com/colors/colors_picker.asp */
+}
+
+.edb-theme {
+  color: #663300;
+}
+
+.devoured span {
+  background-color: transparent;
+}
