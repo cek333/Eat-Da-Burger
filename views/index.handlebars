@@ -1,0 +1,29 @@
+<!-- display burger info from db -->
+<div class="row mb-3">
+  <!-- left side -->
+  <section class="col-md-6 devour-it">
+    {{#each burgers}}
+      {{#unless devoured}}
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" value="{{id}}. {{burger_name}}" readonly>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary edb-theme font-weight-bold" type="button" data-id="{{id}}">Devour It!</button>
+          </div>
+        </div>
+      {{/unless}}
+    {{/each}}
+  </section>
+  <!-- right side -->
+  <section class="col-md-6 devoured">
+    {{#each burgers}}
+      {{#if devoured}}
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" value="{{id}}. {{burger_name}}" disabled>
+          <div class="input-group-append">
+            <span class="input-group-text edb-theme font-weight-bold">Devoured!</span>
+          </div>
+        </div>
+      {{/if}}
+    {{/each}}
+  </section>
+</div>
