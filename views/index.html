@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/fab15f6c83.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../public/assets/css/style.css">
+  <title>Eat-Da-Burger</title>
+</head>
+<body>
+  <header class="container text-center mb-4">
+    <i class="fas fa-hamburger fa-10x logo"></i>
+    <h1 class="edb-theme">Eat-Da-Burger!</h1>
+  </header>
+  <main class="container">
+    <!-- display burger info from db -->
+    <div class="row mb-3">
+      <!-- left side -->
+      <section class="col-6 devour-it">
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" readonly>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary edb-theme font-weight-bold" type="button">Devour It!</button>
+          </div>
+        </div>
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" readonly>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary edb-theme font-weight-bold" type="button">Devour It!</button>
+          </div>
+        </div>
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" readonly>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary edb-theme font-weight-bold" type="button">Devour It!</button>
+          </div>
+        </div>                    
+      </section>
+      <!-- right side -->
+      <section class="col-6 devoured">
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" disabled>
+          <div class="input-group-append">
+            <span class="input-group-text edb-theme font-weight-bold">Devoured!</span>
+          </div>
+        </div>
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" disabled>
+          <div class="input-group-append">
+            <span class="input-group-text edb-theme font-weight-bold">Devoured!</span>
+          </div>
+        </div>
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" disabled>
+          <div class="input-group-append">
+            <span class="input-group-text edb-theme font-weight-bold">Devoured!</span>
+          </div>
+        </div>           
+      </section>
+    </div>
+    <!-- form -->
+    <div class="row">
+      <form class="text-center col-6 m-auto add-burger">
+        <div class="form-group">
+          <input type="text" class="form-control" size="40" id="staticEmail">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary ">Submit</button>
+        </div>
+        <p class="edb-theme">Enter a burger you want to eat, then click the "Submit" button.</p>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
