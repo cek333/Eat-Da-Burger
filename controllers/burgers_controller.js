@@ -5,12 +5,14 @@ const router = express.Router();
 // Home page route
 router.get('/', async function(req, res){
   let burgers = await burgerOrm.getAllBurgers();
-  console.log('[get /]', burgers);
+  // console.log('[get /]', burgers);
   res.render('index', { burgers });
 });
 
 router.post('/api/burger', async function(req, res) {
+  // console.log('[post /api/burger]', req.body);
   let result = await burgerOrm.addBurger(req.body.name);
+  // console.log(`[post /api/burger] insertId=${result.insertId}`);
   // reload page
   res.redirect("/"); 
 });

@@ -19,9 +19,9 @@
     {{{ body }}}
     <!-- form -->
     <div class="row">
-      <form class="text-center col-8 col-md-6 m-auto add-burger">
+      <form class="text-center col-8 col-md-6 m-auto add-burger" action="/api/burger" method="POST">
         <div class="form-group">
-          <input type="text" class="form-control" size="40" id="staticEmail">
+          <input type="text" class="form-control" size="40" name="name" required>
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary ">Submit</button>
