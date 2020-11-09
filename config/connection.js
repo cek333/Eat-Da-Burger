@@ -27,7 +27,7 @@ class Database {
 }
 
 // at top INIT DB connection
-const db = new Database({
+const db = new Database(process.env.JAWSDB_URL ? process.env.JAWSDB_URL : {
   host: "localhost",
   port: 3306,
   user: "root",
