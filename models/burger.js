@@ -13,4 +13,8 @@ function setBurgerToDevoured(id) {
   return orm.updateOne('burgers', { devoured: true }, { id });
 }
 
-module.exports = { getAllBurgers, addBurger, setBurgerToDevoured };
+function deleteBurger(id) {
+  return orm.deleteOne('burgers', { id });
+}
+
+module.exports = { getAllBurgers, addBurger, setBurgerToDevoured, deleteBurger };
