@@ -18,9 +18,14 @@ router.post('/api/burger', async function(req, res) {
 });
 
 router.put('/api/burger/:id', async function(req, res) {
+  // console.log(`[put /api/burger] id=${req.params.id}`);
   let result = await burgerOrm.setBurgerToDevoured(req.params.id);
-  // reload page
-  res.redirect("/"); 
+  //console.log('[put /api/burger/:id]', result);
+  res.json({ message: `${result.changedRows} updated!`}); 
 });
 
+router.delete('/api/burger/:id', async function(req, res) {
+  let result = await burgerOrm.deleteBurger(req.params.id);
+  res.json({message: `${req.params.id} deleted!`});
+});
 module.exports = router;
